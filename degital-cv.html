@@ -1,0 +1,343 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Digital-CV</title>
+    <style>
+      /* General */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      p {
+        margin: 5px 0;
+      }
+      .title {
+        color: #1864ab;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #adb5bd;
+      }
+      .container {
+        padding: 20px;
+        background-color: #ebfbee;
+      }
+      /* goals */
+      .goals {
+        display: flex;
+        flex-direction: column;
+      }
+      .goals-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-bottom: 1px solid #ced4da;
+      }
+      /* scopes */
+      .scopes-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      h3 {
+        padding: 20px 0;
+      }
+      /* team */
+      .team-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+      }
+      /* primary */
+      .primary-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+      }
+      /* timeline */
+      .timeline-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+      }
+      .timeline-title-border-radius {
+        color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #1864ab;
+        font-weight: 200;
+      }
+      .timeline-border {
+        border-bottom: 1px solid #ced4da;
+      }
+      .time-line-ovl {
+        grid-column: 3/-1;
+        grid-row: 1/-1;
+      }
+      .digital-cv {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+
+        background-color: #1864ab;
+        padding: 20px;
+      }
+      @media (max-width: 768px) {
+        .digital-cv {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #1864ab;
+          padding: 20px;
+        }
+        .goals-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 10px;
+          padding: 10px;
+          border-bottom: 1px solid #ced4da;
+        }
+        .goal-info {
+          align-self: flex-start;
+        }
+        .scopes-child {
+          display: flex;
+          flex-direction: column;
+        }
+        h3 {
+          padding-bottom: 5px;
+        }
+        .primary-child {
+          display: flex;
+          flex-direction: column;
+        }
+        .timeline-child {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 5px;
+        }
+        .timeline-border {
+          width: 100%;
+        }
+        .team-child {
+          display: flex;
+          flex-direction: column;
+        }
+        .member {
+          align-self: start;
+        }
+      }
+      @media (max-width: 600px) {
+        .digital-cv {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #1864ab;
+          padding: 20px;
+        }
+        .goals-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 10px;
+          padding: 10px;
+          border-bottom: 1px solid #ced4da;
+        }
+        .goal-info {
+          align-self: flex-start;
+        }
+        .scopes-child {
+          display: flex;
+          flex-direction: column;
+        }
+        h3 {
+          padding-bottom: 5px;
+        }
+        .primary-child {
+          display: flex;
+          flex-direction: column;
+        }
+        .timeline-child {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 5px;
+        }
+        .timeline-border {
+          width: 100%;
+        }
+        .team-child {
+          display: flex;
+          flex-direction: column;
+        }
+        .member {
+          align-self: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="digital-cv">
+      <!-- GOALS -->
+      <div class="container">
+        <div class="goals">
+          <h1 class="goals-tilte title">Goals</h1>
+          <div class="goals-child">
+            <i class="bi bi-flag"></i>
+            <div class="goal-info">
+              <p><strong>Goal 1</strong></p>
+              <p>
+                Xây dựng một trang web CV cá nhân để người xem có thể truy cập
+              </p>
+            </div>
+          </div>
+          <div class="goals-child">
+            <i class="bi bi-flag"></i>
+            <div class="goal-info">
+              <p><strong>Goal 2</strong></p>
+              <p>
+                Ứng dụng HTML và CSS vừa được học để tạo một trang web đơn giản,
+                đưa kiến thức được học vào thực tế
+              </p>
+            </div>
+          </div>
+          <div class="goals-child">
+            <i class="bi bi-flag"></i>
+            <div>
+              <p><strong>Goal 3</strong></p>
+              <p>
+                Lưu trữ dữ liệu cá nhân để thuận tiên nộp CV hoặc public thông
+                tin cá nhân cho người khác
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TEAM -->
+      <div class="container">
+        <div class="team">
+          <h1 class="team-tilte title">Team</h1>
+          <div class="team-child">
+            <i class="bi bi-person-fill"></i>
+            <div class="member">
+              <p><strong>Member 01</strong></p>
+              <p>Name: Lê Trọng Tài</p>
+            </div>
+          </div>
+          <div class="team-child">
+            <i class="bi bi-person-fill"></i>
+            <div class="member">
+              <p><strong>Member 02</strong></p>
+              <p>Name: Mentor của FUNiX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TIMELINE -->
+      <div class="container time-line-ovl">
+        <div class="timeline">
+          <h1 class="primary-tilte title">Timeline</h1>
+          <div class="timeline-child">
+            <div class="timeline-title-border-radius">
+              <h1 class="">01</h1>
+            </div>
+            <div class="timeline-border">
+              <p><strong>Projct start</strong></p>
+              <p>Hình dung bố cục của dự án bao gồm những phần nào</p>
+            </div>
+          </div>
+          <div class="timeline-child">
+            <h1 class="timeline-title-border-radius">02</h1>
+            <div class="timeline-border">
+              <p><strong>14/03</strong></p>
+              <p>Đưa ra phương án để giải quyết các phần như thế nào</p>
+            </div>
+          </div>
+          <div class="timeline-child">
+            <h1 class="timeline-title-border-radius">03</h1>
+            <div class="timeline-border">
+              <p><strong>14/03</strong></p>
+              <p>Hoàn thành các phần của dự án</p>
+            </div>
+          </div>
+          <div class="timeline-child">
+            <h1 class="timeline-title-border-radius">04</h1>
+            <div class="timeline-border">
+              <p><strong>15/03</strong></p>
+              <p>Kiểm tra lỗi và chỉnh sửa để hoàn thiện</p>
+            </div>
+          </div>
+          <div class="timeline-child">
+            <h1 class="timeline-title-border-radius">05</h1>
+            <div class="timeline-border">
+              <p><strong>20/03</strong></p>
+              <p>Thêm giao diện cho tablet và mobile</p>
+            </div>
+          </div>
+          <div class="timeline-child">
+            <h1 class="timeline-title-border-radius">06</h1>
+            <div class="timeline-border">
+              <p><strong>20/03</strong></p>
+              <p>Thêm giao diện cho tablet và mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SCOPES -->
+      <div class="container">
+        <div class="scopes">
+          <h1 class="scopes-tilte title">Scopes</h1>
+          <div class="scopes-child">
+            <div>
+              <h3 class="scopes-tilte-child">IN</h3>
+              <p>
+                Đây là dự án assignment 3, bài tập bắt buộc để hoàn thành môn
+                học
+              </p>
+            </div>
+            <div>
+              <h3 class="scopes-tilte-child">OUT</h3>
+              <p>
+                Dự án này có liên quan đến bên đào tạo FUNiX, mentor của FUNiX
+                sẽ là người kiểm soát chất lượng và chấm điểm bài làm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRIMARY -->
+      <div class="container">
+        <div class="primary">
+          <h1 class="primary-tilte title">Primary</h1>
+          <div class="primary-child">
+            <i class="bi bi-question-circle-fill"></i>
+            <p>
+              Hoàn thành theo đúng bố cục mà yêu cầu đưa ra, kiểm soát được các
+              thông số kích thức
+            </p>
+          </div>
+          <div class="primary-child">
+            <i class="bi bi-question-circle-fill"></i>
+            <p>
+              Tối ưu code ngắn gọn và rõ ràng, chú thích đầy đủ để dễ kiểm soát.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
